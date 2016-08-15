@@ -64,6 +64,7 @@ public class BinaryDataLoader {
         }
     }
     
+    public init() { }
 }
 
 //MARK: - Download
