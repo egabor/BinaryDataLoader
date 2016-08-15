@@ -10,6 +10,7 @@
 		21960C071D61F1D800D5DC6E /* BinaryDataLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 21960C061D61F1D800D5DC6E /* BinaryDataLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21960C0E1D61F1D800D5DC6E /* BinaryDataLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21960C031D61F1D800D5DC6E /* BinaryDataLoader.framework */; };
 		21960C131D61F1D800D5DC6E /* BinaryDataLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21960C121D61F1D800D5DC6E /* BinaryDataLoaderTests.swift */; };
+		21960C1E1D61F29500D5DC6E /* BinaryDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21960C1D1D61F29500D5DC6E /* BinaryDataLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		21960C0D1D61F1D800D5DC6E /* BinaryDataLoaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BinaryDataLoaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21960C121D61F1D800D5DC6E /* BinaryDataLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryDataLoaderTests.swift; sourceTree = "<group>"; };
 		21960C141D61F1D800D5DC6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21960C1D1D61F29500D5DC6E /* BinaryDataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryDataLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				21960C061D61F1D800D5DC6E /* BinaryDataLoader.h */,
 				21960C081D61F1D800D5DC6E /* Info.plist */,
+				21960C1D1D61F29500D5DC6E /* BinaryDataLoader.swift */,
 			);
 			path = BinaryDataLoader;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21960C1E1D61F29500D5DC6E /* BinaryDataLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +314,7 @@
 		21960C181D61F1D800D5DC6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -320,12 +325,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gujci.BinaryDataLoader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		21960C191D61F1D800D5DC6E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
