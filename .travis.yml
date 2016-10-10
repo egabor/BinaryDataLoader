@@ -20,5 +20,7 @@ deploy:
   api_key:
     secure: GOh8zYOnOyh9wcWGt9TaCN0WayYTS0wbH5J2Lzj5epB3dCT6hCLDjOvFPRpC0magPnB+ztz1+8I/rRqExaUNcWtBRTzSAsO5kTzXhAThOv6QPh2JVoF5O/qU2cYB1V0P0Gw4/HCTsz8RH4nWwo4tmgZitex8bWMgZ4BLluxC3XayKlOwIWCP6Gc9/ed/I7ZZvr0vLZOaEhwTgWwIomynT5Ko5tiZxuSsR37TsQaUWBjUvskC3sj4Y6dDtq5ZVDtyn7hKQCUFecXznwP26TB4EOU7NXtYJREDhMrV8T1uaBqaoH9krDKJ+wvShCN6M2tw6FjvfI8IH+t1XVp7GpmjF3I4ck/r0ZOD+bxUckP8iLB08MF2mvjvBJZSxGCZvzT1yjs2kLxBMyY8BJPm0gWrfzdgRncX0sv6BXZZrpHzp9s6qfwE45CebXAMv7n3W0Zfkp8bv0/dkGomk6tOvc3q60nUa7PkdtkHKNfniVOeNAQn+pdYZRwxIJnZnZKcz9ddts6u/Fr+HcCbnM4Fwp5gLqqMh4eoNLWe+vjolA83YsuDbx1jZMzFPJPANUvtOXso2oLS2GJbKGbnmqX7XRe7umje8fDP7n+KPuiq2zLYM4NMe0UhTQEr2WQuKmACnjYU9+2/UiTh7ecdJmeMiALtaG33PaCCjLA1WRpBTghAqGs=
   file: "$FRAMEWORK_NAME.framework.zip"
+  skip_cleanup: true
   on:
     repo: Gujci/BinaryDataLoader
+    tags: true
