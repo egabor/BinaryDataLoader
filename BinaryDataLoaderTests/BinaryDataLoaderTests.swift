@@ -22,14 +22,14 @@ class BinaryDataLoaderTests: XCTestCase {
     }
     
     func testBinaryCache() {
-        let expectation = expectationWithDescription("cache")
+        let expectation = self.expectation(description: "cache")
         let loader = BinaryDataLoader()
         
         loader.get(from: "http://lorempixel.com/g/400/200/") { (data: UIImage?) in
             expectation.fulfill()
         }
         
-        waitForExpectationsWithTimeout(30) { error in
+        waitForExpectations(timeout: 30) { error in
             if let error = error {
                 print("Error: \(error.localizedDescription)")
             }
