@@ -12,9 +12,10 @@ before_install:
 before_deploy:
 - carthage build --no-skip-current
 - carthage archive $FRAMEWORK_NAME
-script: xcodebuild -project BinaryDataLoader.xcodeproj -scheme 'BinaryDataLoader'
-  -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.0' build test CODE_SIGN_IDENTITY=""
-  CODE_SIGNING_REQUIRED=NO
+script: 
+- set -o pipefail
+- travis_retry xcodebuild -scheme 'BinaryDataLoader iOS' -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.0' build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+- travis_retry xcodebuild -scheme 'BinaryDataLoader tvOS' -destination 'platform=tvOS Simulator,name=Apple TV 1080p' build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
 deploy:
   provider: releases
   api_key:
@@ -24,3 +25,8 @@ deploy:
   on:
     repo: Gujci/BinaryDataLoader
     tags: true
+notifications:
+  slack:
+    rooms:
+      - gujci:wO7hQ3GU0mJnrUduQoswmh6C#binarydataloader
+  email: false
