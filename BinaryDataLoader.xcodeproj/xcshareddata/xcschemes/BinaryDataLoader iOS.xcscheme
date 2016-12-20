@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "21960C021D61F1D800D5DC6E"
-               BuildableName = "BinaryDataLoader.framework"
-               BlueprintName = "BinaryDataLoader"
+               BuildableName = "BinaryDataLoader iOS.framework"
+               BlueprintName = "BinaryDataLoader iOS"
                ReferencedContainer = "container:BinaryDataLoader.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -34,8 +34,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "21960C0C1D61F1D800D5DC6E"
-               BuildableName = "BinaryDataLoaderTests.xctest"
-               BlueprintName = "BinaryDataLoaderTests"
+               BuildableName = "BinaryDataLoader iOSTests.xctest"
+               BlueprintName = "BinaryDataLoader iOSTests"
                ReferencedContainer = "container:BinaryDataLoader.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -44,8 +44,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "21960C021D61F1D800D5DC6E"
-            BuildableName = "BinaryDataLoader.framework"
-            BlueprintName = "BinaryDataLoader"
+            BuildableName = "BinaryDataLoader iOS.framework"
+            BlueprintName = "BinaryDataLoader iOS"
             ReferencedContainer = "container:BinaryDataLoader.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -66,8 +66,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "21960C021D61F1D800D5DC6E"
-            BuildableName = "BinaryDataLoader.framework"
-            BlueprintName = "BinaryDataLoader"
+            BuildableName = "BinaryDataLoader iOS.framework"
+            BlueprintName = "BinaryDataLoader iOS"
             ReferencedContainer = "container:BinaryDataLoader.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -84,8 +84,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "21960C021D61F1D800D5DC6E"
-            BuildableName = "BinaryDataLoader.framework"
-            BlueprintName = "BinaryDataLoader"
+            BuildableName = "BinaryDataLoader iOS.framework"
+            BlueprintName = "BinaryDataLoader iOS"
             ReferencedContainer = "container:BinaryDataLoader.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2158E5051E098669002A957E /* BinaryDataLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2158E4FC1E098669002A957E /* BinaryDataLoader.framework */; };
+		2158E5161E09870F002A957E /* BinaryDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21960C1D1D61F29500D5DC6E /* BinaryDataLoader.swift */; };
+		2158E5171E098718002A957E /* BinaryDataLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 21960C061D61F1D800D5DC6E /* BinaryDataLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2158E5181E09872F002A957E /* BinaryDataLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21960C121D61F1D800D5DC6E /* BinaryDataLoaderTests.swift */; };
 		21960C071D61F1D800D5DC6E /* BinaryDataLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 21960C061D61F1D800D5DC6E /* BinaryDataLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21960C0E1D61F1D800D5DC6E /* BinaryDataLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21960C031D61F1D800D5DC6E /* BinaryDataLoader.framework */; };
 		21960C131D61F1D800D5DC6E /* BinaryDataLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21960C121D61F1D800D5DC6E /* BinaryDataLoaderTests.swift */; };
@@ -14,6 +18,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2158E5061E098669002A957E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21960BFA1D61F1D800D5DC6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2158E4FB1E098669002A957E;
+			remoteInfo = "BinaryDataLoader tvOS";
+		};
 		21960C0F1D61F1D800D5DC6E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 21960BFA1D61F1D800D5DC6E /* Project object */;
@@ -24,16 +35,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2158E4FC1E098669002A957E /* BinaryDataLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BinaryDataLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2158E5041E098669002A957E /* BinaryDataLoader tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BinaryDataLoader tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2158E5141E0986E6002A957E /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Info-tvOS.plist"; path = "BinaryDataLoader/Info-tvOS.plist"; sourceTree = "<group>"; };
 		21960C031D61F1D800D5DC6E /* BinaryDataLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BinaryDataLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21960C061D61F1D800D5DC6E /* BinaryDataLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryDataLoader.h; sourceTree = "<group>"; };
-		21960C081D61F1D800D5DC6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		21960C0D1D61F1D800D5DC6E /* BinaryDataLoaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BinaryDataLoaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21960C081D61F1D800D5DC6E /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-iOS.plist"; path = "BinaryDataLoader/Info-iOS.plist"; sourceTree = "<group>"; };
+		21960C0D1D61F1D800D5DC6E /* BinaryDataLoader iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BinaryDataLoader iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21960C121D61F1D800D5DC6E /* BinaryDataLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryDataLoaderTests.swift; sourceTree = "<group>"; };
 		21960C141D61F1D800D5DC6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21960C1D1D61F29500D5DC6E /* BinaryDataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryDataLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2158E4F81E098669002A957E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2158E5011E098669002A957E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2158E5051E098669002A957E /* BinaryDataLoader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		21960BFF1D61F1D800D5DC6E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,9 +81,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2158E5131E0986AA002A957E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				21960C081D61F1D800D5DC6E /* Info-iOS.plist */,
+				2158E5141E0986E6002A957E /* Info-tvOS.plist */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
 		21960BF91D61F1D800D5DC6E = {
 			isa = PBXGroup;
 			children = (
+				2158E5131E0986AA002A957E /* Support Files */,
 				21960C051D61F1D800D5DC6E /* BinaryDataLoader */,
 				21960C111D61F1D800D5DC6E /* BinaryDataLoaderTests */,
 				21960C041D61F1D800D5DC6E /* Products */,
@@ -65,7 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				21960C031D61F1D800D5DC6E /* BinaryDataLoader.framework */,
-				21960C0D1D61F1D800D5DC6E /* BinaryDataLoaderTests.xctest */,
+				21960C0D1D61F1D800D5DC6E /* BinaryDataLoader iOSTests.xctest */,
+				2158E4FC1E098669002A957E /* BinaryDataLoader.framework */,
+				2158E5041E098669002A957E /* BinaryDataLoader tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				21960C061D61F1D800D5DC6E /* BinaryDataLoader.h */,
-				21960C081D61F1D800D5DC6E /* Info.plist */,
 				21960C1D1D61F29500D5DC6E /* BinaryDataLoader.swift */,
 			);
 			path = BinaryDataLoader;
@@ -92,6 +132,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		2158E4F91E098669002A957E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2158E5171E098718002A957E /* BinaryDataLoader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		21960C001D61F1D800D5DC6E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -103,9 +151,45 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		21960C021D61F1D800D5DC6E /* BinaryDataLoader */ = {
+		2158E4FB1E098669002A957E /* BinaryDataLoader tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 21960C171D61F1D800D5DC6E /* Build configuration list for PBXNativeTarget "BinaryDataLoader" */;
+			buildConfigurationList = 2158E50D1E098669002A957E /* Build configuration list for PBXNativeTarget "BinaryDataLoader tvOS" */;
+			buildPhases = (
+				2158E4F71E098669002A957E /* Sources */,
+				2158E4F81E098669002A957E /* Frameworks */,
+				2158E4F91E098669002A957E /* Headers */,
+				2158E4FA1E098669002A957E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BinaryDataLoader tvOS";
+			productName = "BinaryDataLoader tvOS";
+			productReference = 2158E4FC1E098669002A957E /* BinaryDataLoader.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2158E5031E098669002A957E /* BinaryDataLoader tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2158E5101E098669002A957E /* Build configuration list for PBXNativeTarget "BinaryDataLoader tvOSTests" */;
+			buildPhases = (
+				2158E5001E098669002A957E /* Sources */,
+				2158E5011E098669002A957E /* Frameworks */,
+				2158E5021E098669002A957E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2158E5071E098669002A957E /* PBXTargetDependency */,
+			);
+			name = "BinaryDataLoader tvOSTests";
+			productName = "BinaryDataLoader tvOSTests";
+			productReference = 2158E5041E098669002A957E /* BinaryDataLoader tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		21960C021D61F1D800D5DC6E /* BinaryDataLoader iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21960C171D61F1D800D5DC6E /* Build configuration list for PBXNativeTarget "BinaryDataLoader iOS" */;
 			buildPhases = (
 				21960BFE1D61F1D800D5DC6E /* Sources */,
 				21960BFF1D61F1D800D5DC6E /* Frameworks */,
@@ -116,14 +200,14 @@
 			);
 			dependencies = (
 			);
-			name = BinaryDataLoader;
+			name = "BinaryDataLoader iOS";
 			productName = BinaryDataLoader;
 			productReference = 21960C031D61F1D800D5DC6E /* BinaryDataLoader.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		21960C0C1D61F1D800D5DC6E /* BinaryDataLoaderTests */ = {
+		21960C0C1D61F1D800D5DC6E /* BinaryDataLoader iOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 21960C1A1D61F1D800D5DC6E /* Build configuration list for PBXNativeTarget "BinaryDataLoaderTests" */;
+			buildConfigurationList = 21960C1A1D61F1D800D5DC6E /* Build configuration list for PBXNativeTarget "BinaryDataLoader iOSTests" */;
 			buildPhases = (
 				21960C091D61F1D800D5DC6E /* Sources */,
 				21960C0A1D61F1D800D5DC6E /* Frameworks */,
@@ -134,9 +218,9 @@
 			dependencies = (
 				21960C101D61F1D800D5DC6E /* PBXTargetDependency */,
 			);
-			name = BinaryDataLoaderTests;
+			name = "BinaryDataLoader iOSTests";
 			productName = BinaryDataLoaderTests;
-			productReference = 21960C0D1D61F1D800D5DC6E /* BinaryDataLoaderTests.xctest */;
+			productReference = 21960C0D1D61F1D800D5DC6E /* BinaryDataLoader iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -145,10 +229,20 @@
 		21960BFA1D61F1D800D5DC6E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = gujci;
 				TargetAttributes = {
+					2158E4FB1E098669002A957E = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = TE3XP65K6X;
+						ProvisioningStyle = Automatic;
+					};
+					2158E5031E098669002A957E = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = TE3XP65K6X;
+						ProvisioningStyle = Automatic;
+					};
 					21960C021D61F1D800D5DC6E = {
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 0800;
@@ -171,13 +265,29 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				21960C021D61F1D800D5DC6E /* BinaryDataLoader */,
-				21960C0C1D61F1D800D5DC6E /* BinaryDataLoaderTests */,
+				21960C021D61F1D800D5DC6E /* BinaryDataLoader iOS */,
+				21960C0C1D61F1D800D5DC6E /* BinaryDataLoader iOSTests */,
+				2158E4FB1E098669002A957E /* BinaryDataLoader tvOS */,
+				2158E5031E098669002A957E /* BinaryDataLoader tvOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2158E4FA1E098669002A957E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2158E5021E098669002A957E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		21960C011D61F1D800D5DC6E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -195,6 +305,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2158E4F71E098669002A957E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2158E5161E09870F002A957E /* BinaryDataLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2158E5001E098669002A957E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2158E5181E09872F002A957E /* BinaryDataLoaderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		21960BFE1D61F1D800D5DC6E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,14 +340,99 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2158E5071E098669002A957E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2158E4FB1E098669002A957E /* BinaryDataLoader tvOS */;
+			targetProxy = 2158E5061E098669002A957E /* PBXContainerItemProxy */;
+		};
 		21960C101D61F1D800D5DC6E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 21960C021D61F1D800D5DC6E /* BinaryDataLoader */;
+			target = 21960C021D61F1D800D5DC6E /* BinaryDataLoader iOS */;
 			targetProxy = 21960C0F1D61F1D800D5DC6E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		2158E50E1E098669002A957E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TE3XP65K6X;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/BinaryDataLoader/Info-tvOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gujci.BinaryDataLoader;
+				PRODUCT_NAME = BinaryDataLoader;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		2158E50F1E098669002A957E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TE3XP65K6X;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/BinaryDataLoader/Info-tvOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gujci.BinaryDataLoader;
+				PRODUCT_NAME = BinaryDataLoader;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Release;
+		};
+		2158E5111E098669002A957E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = TE3XP65K6X;
+				INFOPLIST_FILE = BinaryDataLoaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gujci.BinaryDataLoader-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		2158E5121E098669002A957E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = TE3XP65K6X;
+				INFOPLIST_FILE = BinaryDataLoaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gujci.BinaryDataLoader-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Release;
+		};
 		21960C151D61F1D800D5DC6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -327,11 +538,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = BinaryDataLoader/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BinaryDataLoader/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gujci.BinaryDataLoader;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BinaryDataLoader;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -347,11 +558,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = BinaryDataLoader/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BinaryDataLoader/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gujci.BinaryDataLoader;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BinaryDataLoader;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -382,6 +593,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2158E50D1E098669002A957E /* Build configuration list for PBXNativeTarget "BinaryDataLoader tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2158E50E1E098669002A957E /* Debug */,
+				2158E50F1E098669002A957E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2158E5101E098669002A957E /* Build configuration list for PBXNativeTarget "BinaryDataLoader tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2158E5111E098669002A957E /* Debug */,
+				2158E5121E098669002A957E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		21960BFD1D61F1D800D5DC6E /* Build configuration list for PBXProject "BinaryDataLoader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -391,7 +618,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		21960C171D61F1D800D5DC6E /* Build configuration list for PBXNativeTarget "BinaryDataLoader" */ = {
+		21960C171D61F1D800D5DC6E /* Build configuration list for PBXNativeTarget "BinaryDataLoader iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				21960C181D61F1D800D5DC6E /* Debug */,
@@ -400,7 +627,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		21960C1A1D61F1D800D5DC6E /* Build configuration list for PBXNativeTarget "BinaryDataLoaderTests" */ = {
+		21960C1A1D61F1D800D5DC6E /* Build configuration list for PBXNativeTarget "BinaryDataLoader iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				21960C1B1D61F1D800D5DC6E /* Debug */,

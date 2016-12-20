@@ -4,14 +4,29 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>BinaryDataLoader.xcscheme_^#shared#^_</key>
+		<key>BinaryDataLoader iOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>BinaryDataLoader tvOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>2158E4FB1E098669002A957E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2158E5031E098669002A957E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>21960C021D61F1D800D5DC6E</key>
 		<dict>
 			<key>primary</key>
