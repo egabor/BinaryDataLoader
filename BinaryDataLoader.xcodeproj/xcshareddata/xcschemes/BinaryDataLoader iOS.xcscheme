@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "21960C021D61F1D800D5DC6E"
-               BuildableName = "BinaryDataLoader iOS.framework"
+               BuildableName = "BinaryDataLoader.framework"
                BlueprintName = "BinaryDataLoader iOS"
                ReferencedContainer = "container:BinaryDataLoader.xcodeproj">
             </BuildableReference>
@@ -44,7 +44,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "21960C021D61F1D800D5DC6E"
-            BuildableName = "BinaryDataLoader iOS.framework"
+            BuildableName = "BinaryDataLoader.framework"
             BlueprintName = "BinaryDataLoader iOS"
             ReferencedContainer = "container:BinaryDataLoader.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "21960C021D61F1D800D5DC6E"
-            BuildableName = "BinaryDataLoader iOS.framework"
+            BuildableName = "BinaryDataLoader.framework"
             BlueprintName = "BinaryDataLoader iOS"
             ReferencedContainer = "container:BinaryDataLoader.xcodeproj">
          </BuildableReference>
@@ -84,7 +84,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "21960C021D61F1D800D5DC6E"
-            BuildableName = "BinaryDataLoader iOS.framework"
+            BuildableName = "BinaryDataLoader.framework"
             BlueprintName = "BinaryDataLoader iOS"
             ReferencedContainer = "container:BinaryDataLoader.xcodeproj">
          </BuildableReference>

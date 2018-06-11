@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2158E4FB1E098669002A957E"
-               BuildableName = "BinaryDataLoader tvOS.framework"
+               BuildableName = "BinaryDataLoader.framework"
                BlueprintName = "BinaryDataLoader tvOS"
                ReferencedContainer = "container:BinaryDataLoader.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2158E4FB1E098669002A957E"
-            BuildableName = "BinaryDataLoader tvOS.framework"
+            BuildableName = "BinaryDataLoader.framework"
             BlueprintName = "BinaryDataLoader tvOS"
             ReferencedContainer = "container:BinaryDataLoader.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2158E4FB1E098669002A957E"
-            BuildableName = "BinaryDataLoader tvOS.framework"
+            BuildableName = "BinaryDataLoader.framework"
             BlueprintName = "BinaryDataLoader tvOS"
             ReferencedContainer = "container:BinaryDataLoader.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2158E4FB1E098669002A957E"
-            BuildableName = "BinaryDataLoader tvOS.framework"
+            BuildableName = "BinaryDataLoader.framework"
             BlueprintName = "BinaryDataLoader tvOS"
             ReferencedContainer = "container:BinaryDataLoader.xcodeproj">
          </BuildableReference>
