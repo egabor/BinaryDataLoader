@@ -35,6 +35,8 @@ extension Data: BinaryLoadable {
 //MAKR: - Implementation
 open class BinaryDataLoader {
     
+    open var headers: [String: String] = [:]
+    
     open func get<T: BinaryLoadable>(from url: String, cachePolicy: CachePolicy = .newest, done: @escaping (_ data: T?) -> Void) {
         var foundInCache = false
         
@@ -47,7 +49,7 @@ open class BinaryDataLoader {
             return
         }
         
-        downloadData(URL(string:  url)!) { [weak self] (data) in
+        downloadData(URL(string:  url)!, headers: headers) { [weak self] (data) in
             guard let validData = data else {
                 done(nil)
                 return
@@ -88,16 +90,18 @@ public extension BinaryDataLoader {
 //MARK: - Download
 extension BinaryDataLoader {
     
-    fileprivate func downloadData(_ url: URL, done: @escaping (_ data: Data?) -> Void) {
+    fileprivate func downloadData(_ url: URL, headers: [String: String] = [:], done: @escaping (_ data: Data?) -> Void) {
         let session = URLSession(configuration: URLSessionConfiguration.default)
-        session.dataTask(with: url, completionHandler: {
+        var request = URLRequest(url: url)
+        headers.forEach() { request.addValue($0.1, forHTTPHeaderField: $0.0) }
+        session.dataTask(with: request, completionHandler: {
             (data, response, error) in
             guard data != nil else {
                 done(nil)
                 return
             }
             done(data)
-            }) .resume()
+        }) .resume()
     }
 }
 
