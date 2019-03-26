@@ -26,6 +26,7 @@ class BinaryDataLoaderTests: XCTestCase {
         let loader = BinaryDataLoader()
         
         loader.get(from: "http://lorempixel.com/g/400/200/") { (data: UIImage?) in
+            XCTAssertNotNil(data)
             expectation.fulfill()
         }
         
