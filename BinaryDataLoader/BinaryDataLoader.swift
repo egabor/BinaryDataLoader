@@ -40,9 +40,9 @@ open class BinaryDataLoader {
     open func get<T: BinaryLoadable>(from url: String, cachePolicy: CachePolicy = .newest, done: @escaping (_ data: T?) -> Void) {
         var foundInCache = false
         
-        if let cachedData = try? getPersistantData(by: url) , cachePolicy != .noCache, let validData = cachedData {
+        if let cachedData = try? getPersistantData(by: url) , cachePolicy != .noCache{
             foundInCache = true
-            DispatchQueue.main.async { done(T.create(with: validData)) }
+            DispatchQueue.main.async { done(T.create(with: cachedData)) }
         }
         
         if cachePolicy == .acceptCache && foundInCache {
@@ -76,7 +76,7 @@ open class BinaryDataLoader {
 //MARK: - Explicit UIImage support
 public extension BinaryDataLoader {
     
-    public func get(from url: String, cachePolicy: CachePolicy = .newest, done: @escaping (_ data: UIImage?) -> Void) {
+    func get(from url: String, cachePolicy: CachePolicy = .newest, done: @escaping (_ data: UIImage?) -> Void) {
         self.get(from: url, cachePolicy: cachePolicy) { (data: Data?) in
             guard let validData = data else {
                 done(nil)
