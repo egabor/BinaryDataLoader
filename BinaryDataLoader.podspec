@@ -2,10 +2,10 @@ Pod::Spec.new do |s|
   s.name             = 'BinaryDataLoader'
   s.version          = '0.2.7'
   s.swift_version    = '4.2'
-  s.summary          = ''
+  s.summary          = 'Simple binary data loader for iOS'
  
   s.description      = <<-DESC
-
+  Simple binary data loader for iOS. Simple binary data loader for iOS
                        DESC
  
   s.homepage         = 'https://github.com/egabor/BinaryDataLoader'
